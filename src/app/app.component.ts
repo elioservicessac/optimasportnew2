@@ -29,22 +29,22 @@ export class AppComponent implements OnInit {
   appPages = [
     {
       title: 'Schedule',
-      url: '/app/tabs/schedule',
+      url: '/tablinks/schedule',
       icon: 'calendar'
     },
     {
       title: 'Speakers',
-      url: '/app/tabs/speakers',
+      url: '/tablinks/speakers',
       icon: 'people'
     },
     {
       title: 'Map',
-      url: '/app/tabs/map',
+      url: '/tablinks/map',
       icon: 'map'
     },
     {
       title: 'About',
-      url: '/app/tabs/about',
+      url: '/tablinks/about',
       icon: 'information-circle'
     }
   ];
@@ -165,8 +165,8 @@ console.log('playlistsmanual',this.playlistsmanual);
     }
 
     console.log('enviar esta categoria', enviarporparams);
-    this.router.navigate(['/app/tabs/schedule', enviarporparams]);
-    // return this.router.navigateByUrl('/app/tabs/schedule',p);
+    this.router.navigate(['/tablinks/schedule', enviarporparams]);
+    // return this.router.navigateByUrl('/tablinks/schedule',p);
   }
 
   async ngOnInit() {
@@ -208,7 +208,7 @@ console.log('playlistsmanual',this.playlistsmanual);
 
   logout() {
     // this.userData.logout().then(() => {
-      // return this.router.navigateByUrl('/app/tabs/schedule');
+      // return this.router.navigateByUrl('/tablinks/schedule');
       this.menu.enable(false);
       this.router.navigate(['/login']);
 
@@ -216,7 +216,7 @@ console.log('playlistsmanual',this.playlistsmanual);
   }
 
   openTutorial() {
-    this.menu.enable(false);
+    // this.menu.enable(false);
     // this.storage.set('ion_did_tutorial', false);
     this.router.navigateByUrl('/tutorial');
   }

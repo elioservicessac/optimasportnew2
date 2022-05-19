@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { SchedulePageRoutingModule } from './schedule-routing.module';
 
@@ -11,6 +11,7 @@ import { SchedulePage } from './schedule.page';
 @NgModule({
   imports: [
     CommonModule,
+    Ng2SearchPipeModule,
     FormsModule,
     IonicModule,
     SchedulePageRoutingModule

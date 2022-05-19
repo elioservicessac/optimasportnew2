@@ -80,7 +80,7 @@ export class LoginPage {
                 exitoso.present();
                 mensajeactualizando.dismiss();
                     this.menu.enable(true);
-                // this.router.navigateByUrl('/app/tabs/schedule');
+                // this.router.navigateByUrl('/tablinks/schedule');
                 this.router.navigateByUrl('/tablinks/schedule');
 
               }

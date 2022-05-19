@@ -25,12 +25,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
+    path: 'account',
+    loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
+  },
+  {
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then( m => m.TutorialPageModule)
   },
   {
     path: '',
     loadChildren: () => import('./tablinks/tablinks.module').then(m => m.TablinksPageModule)
+  },
+  {
+    path: 'session-detail',
+    loadChildren: () => import('./pages/session-detail/session-detail.module').then( m => m.SessionDetailPageModule)
   }
 
 
