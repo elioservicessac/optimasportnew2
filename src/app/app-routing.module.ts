@@ -39,6 +39,10 @@ const routes: Routes = [
   {
     path: 'session-detail',
     loadChildren: () => import('./pages/session-detail/session-detail.module').then( m => m.SessionDetailPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   }
 
 
