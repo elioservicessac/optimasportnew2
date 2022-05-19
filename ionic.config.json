@@ -1,0 +1,7 @@
+{
+  "name": "optimasportnew",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
